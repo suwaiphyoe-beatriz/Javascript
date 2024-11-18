@@ -168,3 +168,4 @@ function calculateProbability() {
   document.getElementById('results').innerText = `Probability to get sum ${targetSum} with ${numofDice} dice is ${probability.toFixed(2)}%`;
 }
 
+
