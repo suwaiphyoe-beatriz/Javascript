@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module1</title>
+</head>
+<body>
+  <h1>Module 1 Assignment</h1>
+  <p id="greeting"></p>
+  <p id="sum"></p>
+  <p id="product"></p>
+  <p id="average"></p>
+  <p id="sortingResult"></p>
+  <p id="rs"></p>
+  <p id="result"></p>
+
+  <label for="numDice">Enter the number of dice to roll:</label>
+  <input type="number" id="numDice" min="1">
+  <button onclick="rollDice()">Roll Dice</button>
+
+  <p id="res"></p>
+  <label for="startYear">Enter start year:</label>
+  <input type="number" id="startYear">
+  <br><br>
+
+  <label for="endYear">Enter end year:</label>
+  <input type="number" id="endYear">
+  <br><br>
+
+  <button onclick="findLeapYears()">Find Leap Years</button>
+
+  <h2>Leap Years:</h2>
+  <ul id="leapYearsList"></ul>
+  <label for="number">Enter a number:</label>
+  <input type="number" id="number" required>
+  <br><br>
+
+  <button onclick="checkPrime()">Check Prime</button>
+
+  <h3>Result:</h3>
+  <p id="finalresult"></p>
+
+  <label for="numofDice">Enter the number of dice:</label>
+  <input type="number" id="numofDice" required><br><br>
+
+  <label for="targetSum">Enter the target sum of the dice rolls:</label>
+  <input type="number" id="targetSum" required><br><br>
+
+  <button onclick="calculateProbability()">Calculate Probability</button>
+
+  <h3>Result:</h3>
+  <p id="results"></p>
+
+  <script src="module1.js"></script>
+</body>
+</html>
