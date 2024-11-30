@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<body>
+    <h1>Enter Numbers</h1>
+    <p>Click the button below to start entering numbers.</p>
+    <button id="startButton">Start</button>
+
+    <script>
+        let numbers = [];
+
+        function promptForNumbers() {
+            while (true) {
+
+                let userInput = prompt("Enter a number:");
+
+                if (userInput === null || userInput === "") {
+                    alert("No number entered. Exiting the program.");
+                    break;
+                }
+                let num = parseInt(userInput);
+                if (isNaN(num)) {
+                    alert("Please enter a valid number.");
+                    continue;
+                }
+
+                if (numbers.includes(num)) {
+                    alert(`The number ${num} has already been given.`);
+                    break;
+                }
+
+                numbers.push(num);
+            }
+
+            numbers.sort((a, b) => a - b);
+
+            console.log("The numbers in ascending order are:", numbers);
+
+            alert("The numbers in ascending order are: " + numbers.join(", "));
+        }
+
+        document.getElementById("startButton").addEventListener("click", promptForNumbers);
+    </script>
+</body>
+</html>
